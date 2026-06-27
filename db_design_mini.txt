@@ -1,0 +1,18 @@
+1.Storing the task name
+2.Storing the task id
+3.Storing the task status
+
+id -> INT PRIMARYKEY AUTOINCREMENTING NOT NULL
+name -> VARCHAR NOT NULL
+status -> INT NOT NULL DEEFAULT 0
+created_at -> TIMESTAMP
+updated_at -> TIMESTAMP 
+
+CREATE TABLE todo (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    status INT NOT NULL DEFAULT 0,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
